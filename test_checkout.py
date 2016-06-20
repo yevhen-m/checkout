@@ -38,3 +38,5 @@ class CheckoutTestCase(unittest.TestCase):
 
         total = self.checkout.calculate('A')
         self.assertEqual(total, 180)
+
+    # TODO finish tests

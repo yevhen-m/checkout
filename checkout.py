@@ -23,6 +23,8 @@ class Checkout:
             logging.warning(fmt.format(item))
         return self.total
 
+    # TODO remove hardcoded prices and get them from db
+
     def _add_item_A(self, quantity=1):
         self._items['A'] += 1
         self.total += 50
