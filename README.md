@@ -22,8 +22,9 @@ have 60 mins.
 Note: time is hard limited, thus it is better to do task in time in suboptimal
 way than to not do it in time in a better way.
 
-## Usage (python 3.5.1)
+## Usage 
 ```
+# python 3.5.1
 python -m venv checkout
 ./checkout/bin/pip install -r requirements.txt
 ./checkout/bin/python server.py
