@@ -1,7 +1,17 @@
+import sys
+
 import bottle
 
 from checkout import Checkout
 
+
+DEFAULT_PORT = 8000
+
+try:
+    script_name, port_str = sys.argv
+    port = int(port_str)
+except (ValueError, TypeError):
+    port = DEFAULT_PORT
 
 app = bottle.Bottle()
 app.checkout = Checkout()
@@ -24,4 +34,4 @@ def index_post():
     bottle.redirect('/')
 
 
-bottle.run(app, host='localhost', port=8000, debug=True, reloader=True)
+bottle.run(app, host='localhost', port=port, debug=True, reloader=True)
