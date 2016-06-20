@@ -19,7 +19,8 @@ class Checkout:
         try:
             getattr(self, '_add_item_{}'.format(item))(quantity)
         except AttributeError:
-            logging.warning('Wrong item at the checkout: "{}"'.format(item))
+            fmt = 'Wrong item passed to Checkout calculate method: "{}"'
+            logging.warning(fmt.format(item))
         return self.total
 
     def _add_item_A(self, quantity=1):
