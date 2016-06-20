@@ -1,0 +1,22 @@
+SKU - stock keeping units
+
+A, B, C, D, E
+multiprices items: buy n items and they will cost you y cents
+
+A: 50 cents
+3A: 130 cents
+
+B: 30 cents
+2B: 45 cents
+
+C: 1kg 199 cents
+
+D: 120 cents
+
+E: 90 cents
+
+2D: get E free
+
+
+B, A, B -> 2B (45c) + A (50c) = 95c
+Prices are stored in the database
