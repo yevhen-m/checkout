@@ -2,6 +2,7 @@
 Python 3.5.1
 
 An exercise according to this task:
+
 In a normal supermarket, things are
 identified using Stock Keeping Units, or SKUs. In our store, we’ll use
 individual letters of the alphabet (A, B, C, and so on). Our goods are priced
